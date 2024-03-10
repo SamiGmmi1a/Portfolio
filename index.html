@@ -3,9 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>portfolio</title>
 </head>
+
 <body>
-    Sami Ghorzi
+    <header class="overflow-hidden">
+
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container">
+
+        <!--Logo-->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="24">
+              </a>
+            </div>
+          </nav>
+
+        <!--Burger-->
+        <button 
+            class="navbar-toggler shadow-none border-0" 
+            type="button" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasNavbar" 
+            aria-controls="offcanvasNavbar" 
+            aria-label="Toggle navigation"
+        >
+
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--SideBar-->
+            <div class="sidebar offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+             
+        <!--Sidebar Header-->     
+            <div class="offcanvas-header text-center text-white">
+            <h5 class="offcanvas-title" 
+            id="offcanvasNavbarLabel">Sami Ghorzi</h5>
+
+            <button 
+            type="button" 
+            class="btn-close btn-close-white shadow-none" 
+            data-bs-dismiss="offcanvas" 
+            aria-label="Close">
+        </button>
+    </div>
+    
+    <!--Sidebar Body-->
+    <div class="offcanvas-body d-flex flex-column p-4 p-lg-0">
+
+                  <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+
+                    <li class="nav-item mx-2">
+                      <a class="nav-link active" aria-current="page" 
+                      href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#projet">Projet</a>
+                      </li>
+
+                      <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+                    
+                  </ul>
+                
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="w-100 vh-100 d-flex flex-colum justify-content-center align-items-center text-white fs-1">
+            <h1>Sami Ghorzi</h1>
+            <h2>Etudiant MMI</h2>
+        </section>
+    </main>
+
+<div class="content">
+    <div class="containet">
+        <div class="single-content">
+            <h1>Content</h1>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <img src="" alt="Sami Ghorzi Logo">
+                        <p>Etudiant en MMI</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Contact</h2>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Votre message" aria-label="Votre message" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
+                            </div>
+
+                            <h3>Me suivre sur</h3>
+                                  <i class="fa fa-instagram"></i>
+                                  <i class="fa fa-linkedin"></i>
+
+                     </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
